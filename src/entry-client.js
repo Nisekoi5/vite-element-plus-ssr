@@ -1,6 +1,5 @@
 import { createWebHistory } from 'vue-router'
 import { createApp } from './main.js'
-import { useCounterStore } from '@/stores/index'
 
 
 
