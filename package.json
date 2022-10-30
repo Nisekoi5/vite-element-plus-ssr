@@ -1,0 +1,47 @@
+{
+  "name": "vv",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "node ./server.js",
+    "prod:server": "set VITE_MODE=production&& node ./server.js",
+    "build": "vite build --outDir dist/server --ssr src/entry-server.js && set vite_build=true &&  vite build --outDir  dist/client  --ssrManifest",
+    "build:client": "set vite_build=true &&  vite build --outDir  dist/client  --ssrManifest",
+    "build:server": "vite build --outDir dist/server --ssr src/entry-server.js ",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.9",
+    "@iconify-json/ep": "^1.1.7",
+    "@types/node": "^18.7.14",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "animate.css": "^4.1.1",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "dompurify": "^2.4.0",
+    "dotenv": "^16.0.3",
+    "element-plus": "^2.2.19",
+    "esbuild-windows-64": "^0.14.54",
+    "express": "^4.18.1",
+    "isomorphic-dompurify": "^0.22.0",
+    "marked": "^4.0.19",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.21",
+    "qrcode.vue": "^3.3.3",
+    "unplugin-auto-import": "^0.11.4",
+    "unplugin-icons": "^0.14.8",
+    "unplugin-vue-components": "^0.22.9",
+    "vue": "^3.2.37",
+    "vue-clipboard3": "^2.0.0",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "typescript": "^4.6.4",
+    "unplugin-element-plus": "^0.4.1",
+    "vite": "^3.0.7",
+    "vue-tsc": "^0.39.5"
+  }
+}
